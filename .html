@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки Free Fire 2026</title>
+    <style>
+body{
+font-family: Arial, sans-serif;
+background:#0f0f0f;
+color:white;
+margin:0;
+}
+
+header{
+background:linear-gradient(90deg,#ff0000,#700000);
+padding:25px;
+text-align:center;
+box-shadow:0 0 20px red;
+}
+
+header h1{
+margin:0;
+font-size:32px;
+}
+
+nav{
+background:#1a1a1a;
+padding:15px;
+text-align:center;
+border-bottom:2px solid red;
+}
+
+nav a{
+color:white;
+margin:0 20px;
+text-decoration:none;
+font-weight:bold;
+font-size:18px;
+}
+
+nav a:hover{
+color:#ff0000;
+}
+
+.main{
+display:flex;
+max-width:1400px;
+margin:auto;
+}
+
+.container{
+flex:3;
+padding:20px;
+}
+
+.sidebar{
+flex:1;
+background:#151515;
+padding:20px;
+border-left:2px solid red;
+}
+
+.ad{
+background:#1f1f1f;
+margin-bottom:20px;
+padding:15px;
+text-align:center;
+border-radius:8px;
+border:1px solid #333;
+}
+
+.card{
+background:#1c1c1c;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+border:1px solid #333;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.03);
+box-shadow:0 0 15px red;
+}
+
+.card h2{
+color:#ff4040;
+}
+
+footer{
+background:#111;
+text-align:center;
+padding:20px;
+margin-top:40px;
+color:#aaa;
+}
+.rating{
+font-size:20px;
+color:gold;
+margin-bottom:15px;
+}
+</style>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Настройки Free Fire 2026</h1>
+        <p>Подходит для всех устройств</p>
+    </header>
+    <nav>
+<div style="text-align:center; margin:20px;">
+  <input type="text" id="universalSearch" placeholder="Поиск статьи или телефона..." style="padding:10px; width:350px; font-size:16px;">
+  <button onclick="universalSearchFunction()" style="padding:10px 15px; font-size:16px; cursor:pointer;">Найти</button>
+</div>
+  <a href="#home">Главная</a>
+  <a href="#articles">Статьи</a>
+  <a href="#phones">Телефоны</a>
+  <a href="#rating">Рейтинг</a>
+</nav>
+    <div class="container">
+        <!-- Настройки iPhone -->
+        <div id="iphone" class="card">
+            <h2>Настройки для iPhone</h2>
+            <p><strong>Общая чувствительность:</strong> 180</p>
+            <p><strong>Красная точка:</strong> 170</p>
+            <p><strong>2x прицел:</strong> 160</p>
+            <p><strong>4x прицел:</strong> 150</p>
+            <p><strong>Sniper прицел:</strong> 140</p>
+            <p><strong>Свободная камера:</strong> 190</p>
+        </div>
+        <!-- Настройки Xiaomi -->
+        <div id="xiaomi" class="card">
+            <h2>Настройки для Xiaomi</h2>
+            <p><strong>Общая чувствительность:</strong> 190</p>
+            <p><strong>Красная точка:</strong> 185</p>
+            <p><strong>2x прицел:</strong> 170</p>
+            <p><strong>4x прицел:</strong> 160</p>
+            <p><strong>Sniper прицел:</strong> 150</p>
+            <p><strong>Свободная камера:</strong> 200</p>
+        </div>
+        <!-- Настройки Oppo -->
+        <div id="oppo" class="card">
+            <h2>Настройки для Oppo</h2>
+            <p><strong>Общая чувствительность:</strong> 175</p>
+            <p><strong>Красная точка:</strong> 165</p>
+            <p><strong>2x прицел:</strong> 155</p>
+            <p><strong>4x прицел:</strong> 145</p>
+            <p><strong>Sniper прицел:</strong> 135</p>
+            <p><strong>Свободная камера:</strong> 180</p>
+        </div>
+        <!-- Настройки Samsung -->
+        <div id="samsung" class="card">
+            <h2>Настройки для Samsung</h2>
+            <p><strong>Общая чувствительность:</strong> 200</p>
+            <p><strong>Красная точка:</strong> 190</p>
+            <p><strong>2x прицел:</strong> 180</p>
+            <p><strong>4x прицел:</strong> 170</p>
+            <p><strong>Sniper прицел:</strong> 160</p>
+            <p><strong>Свободная камера:</strong> 195</p>
+        </div>
+    </div>
+    <footer>
+        © 2026 Free Fire Настройки от Бека | Все права защищены
+    </footer>
+    <script>
+function universalSearchFunction() {
+  let input = document.getElementById('universalSearch').value.toLowerCase();
+  let cards = document.getElementsByClassName('card');
+  let found = false;
+
+  for (let i = 0; i < cards.length; i++) {
+    let title = cards[i].getElementsByTagName('h2')[0].innerText.toLowerCase();
+    let content = cards[i].innerText.toLowerCase();
+    if (title.includes(input) || content.includes(input)) {
+      cards[i].style.display = "block";
+      found = true;
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+
+  if (!found) {
+    alert("Ничего не найдено");
+  }
+}
+</script>
+    <script>
+function searchPhone() {
+  let input = document.getElementById('searchInput').value.toLowerCase();
+  let cards = document.getElementsByClassName('card');
+  let found = false;
+
+  for (let i = 0; i < cards.length; i++) {
+    let title = cards[i].getElementsByTagName('h2')[0].innerText.toLowerCase();
+    if (title.includes(input)) {
+      cards[i].style.display = "block";
+      found = true;
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+
+  if (!found) {
+    alert("Телефон не найден");
+  }
+}
+</script>
+    </div>
+
+<div class="sidebar">
+
+<div class="ad">
+<h3>GitHub</h3>
+<p>Скачать настройки</p>
+</div>
+
+<div class="ad">
+<h3>Free Fire Guide</h3>
+<p>Лучшие настройки 2026</p>
+</div>
+
+<div class="ad">
+<h3>Gaming Portal</h3>
+<p>Советы для игроков</p>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>
+<!--Добавь больше статей или разделов здесь-->
+<!-- Раздел Главная -->
+<div id="home">
+  <h1>Добро пожаловать на сайт настроек Free Fire 2026</h1>
+  <p>Используйте навигацию сверху или поиск для быстрого доступа к нужному разделу.</p>
+</div>
+
+<!-- Раздел Статьи -->
+<div id="articles">
+  <!-- Карточки со статьями 1–30 -->
+  <div class="card">
+    <h2>1. Что такое чувствительность в Free Fire</h2>
+    <p>Чувствительность отвечает за скорость движения прицела. Чем выше значение, тем быстрее двигается прицел.</p>
+  </div>
+
+  <div class="card">
+    <h2>2. Как делать больше хедшотов</h2>
+    <p>Чтобы делать больше хедшотов, нужно немного тянуть прицел вверх во время стрельбы.</p>
+  </div>
+
+  <!-- … Добавь все остальные статьи до 30 … -->
+</div>
+
+<!-- Раздел Телефоны -->
+<div id="phones">
+  <!-- Карточки с телефонами 50 моделей -->
+  <div class="card">
+    <h2>iPhone 11</h2>
+    <p>Общая: 185</p>
+    <p>Красная точка: 180</p>
+    <p>2x: 170</p>
+    <p>4x: 160</p>
+    <p>AWM: 150</p>
+    <p>Свободная камера: 195</p>
+  </div>
+
+  <div class="card">
+    <h2>Samsung A50</h2>
+    <p>Общая: 195</p>
+    <p>Красная точка: 190</p>
+    <p>2x: 175</p>
+    <p>4x: 165</p>
+    <p>AWM: 150</p>
+    <p>Свободная камера: 200</p>
+  </div>
+
+  <!-- … Добавь все остальные телефоны до 50 … -->
+</div>
+<div style="text-align:center; margin:20px;">
+<input type="text" id="searchInput" placeholder="Поиск телефона..." style="padding:10px; width:300px; font-size:16px;">
+<button onclick="searchPhone()" style="padding:10px 15px; font-size:16px; cursor:pointer;">Найти</button>
+</div>
+<div class="card">
+<h2>Рейтинг настроек Free Fire</h2>
+
+<p>iPhone настройки</p>
+<div class="rating">
+⭐⭐⭐⭐⭐ 9.8 / 10
+</div>
+
+<p>Samsung настройки</p>
+<div class="rating">
+⭐⭐⭐⭐ 9.2 / 10
+</div>
+
+<p>Redmi настройки</p>
+<div class="rating">
+⭐⭐⭐⭐ 9.0 / 10
+</div>
+
+<p>Oppo настройки</p>
+<div class="rating">
+⭐⭐⭐⭐ 8.8 / 10
+</div>
+
+<p>Xiaomi настройки</p>
+<div class="rating">
+⭐⭐⭐⭐ 8.7 / 10
+</div>
+
+</div>
+</div>
+<div class="card">
+<h2>iPhone 11 настройки</h2>
+<p>Общая: 185</p>
+<p>Красная точка: 175</p>
+<p>2x: 165</p>
+<p>4x: 155</p>
+<p>AWM: 145</p>
+<p>Камера: 195</p>
+</div>
+
+<div class="card">
+<h2>iPhone 13 настройки</h2>
+<p>Общая: 190</p>
+<p>Красная точка: 180</p>
+<p>2x: 170</p>
+<p>4x: 160</p>
+<p>AWM: 150</p>
+<p>Камера: 200</p>
+</div>
+
+<div class="card">
+<h2>iPhone 15 настройки</h2>
+<p>Общая: 195</p>
+<p>Красная точка: 185</p>
+<p>2x: 175</p>
+<p>4x: 165</p>
+<p>AWM: 155</p>
+<p>Камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Redmi Note 10</h2>
+<p>Общая: 200</p>
+<p>Красная точка: 195</p>
+<p>2x: 185</p>
+<p>4x: 175</p>
+<p>AWM: 165</p>
+<p>Камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Redmi Note 12</h2>
+<p>Общая: 200</p>
+<p>Красная точка: 190</p>
+<p>2x: 180</p>
+<p>4x: 170</p>
+<p>AWM: 160</p>
+<p>Камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Oppo Reno 8</h2>
+<p>Общая: 190</p>
+<p>Красная точка: 180</p>
+<p>2x: 170</p>
+<p>4x: 160</p>
+<p>AWM: 150</p>
+<p>Камера: 195</p>
+</div>
+
+<div class="card">
+<h2>Samsung A50</h2>
+<p>Общая: 200</p>
+<p>Красная точка: 195</p>
+<p>2x: 185</p>
+<p>4x: 175</p>
+<p>AWM: 165</p>
+<p>Камера: 200</p>
+</div>
+<!--Добавь больше статей или разделов здесь-->
+<div style="text-align:center; margin:20px;">
+  <input type="text" id="searchInput" placeholder="Поиск телефона..." style="padding:10px; width:300px; font-size:16px;">
+  <button onclick="searchPhone()" style="padding:10px 15px; font-size:16px; cursor:pointer;">Найти</button>
+</div>
+<div class="card">
+<h2>iPhone 11</h2>
+<p>Общая: 185</p>
+<p>Красная точка: 180</p>
+<p>2x: 170</p>
+<p>4x: 160</p>
+<p>AWM: 150</p>
+<p>Свободная камера: 195</p>
+</div>
+
+<div class="card">
+<h2>iPhone 12</h2>
+<p>Общая: 190</p>
+<p>Красная точка: 185</p>
+<p>2x: 175</p>
+<p>4x: 165</p>
+<p>AWM: 155</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>iPhone 13</h2>
+<p>Общая: 195</p>
+<p>Красная точка: 190</p>
+<p>2x: 180</p>
+<p>4x: 170</p>
+<p>AWM: 160</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>iPhone 14</h2>
+<p>Общая: 200</p>
+<p>Красная точка: 195</p>
+<p>2x: 185</p>
+<p>4x: 175</p>
+<p>AWM: 165</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>iPhone 15</h2>
+<p>Общая: 200</p>
+<p>Красная точка: 195</p>
+<p>2x: 190</p>
+<p>4x: 180</p>
+<p>AWM: 170</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Samsung A50</h2>
+<p>Общая: 195</p>
+<p>Красная точка: 190</p>
+<p>2x: 175</p>
+<p>4x: 165</p>
+<p>AWM: 150</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Samsung A51</h2>
+<p>Общая: 195</p>
+<p>Красная точка: 190</p>
+<p>2x: 180</p>
+<p>4x: 170</p>
+<p>AWM: 160</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Samsung A52</h2>
+<p>Общая: 200</p>
+<p>Красная точка: 195</p>
+<p>2x: 185</p>
+<p>4x: 175</p>
+<p>AWM: 165</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Samsung S20</h2>
+<p>Общая: 200</p>
+<p>Красная точка: 200</p>
+<p>2x: 190</p>
+<p>4x: 180</p>
+<p>AWM: 170</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Samsung S21</h2>
+<p>Общая: 200</p>
+<p>Красная точка: 200</p>
+<p>2x: 190</p>
+<p>4x: 185</p>
+<p>AWM: 175</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Redmi Note 8</h2>
+<p>Общая: 190</p>
+<p>Красная точка: 185</p>
+<p>2x: 175</p>
+<p>4x: 165</p>
+<p>AWM: 150</p>
+<p>Свободная камера: 195</p>
+</div>
+
+<div class="card">
+<h2>Redmi Note 9</h2>
+<p>Общая: 195</p>
+<p>Красная точка: 190</p>
+<p>2x: 180</p>
+<p>4x: 170</p>
+<p>AWM: 160</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Redmi Note 10</h2>
+<p>Общая: 200</p>
+<p>Красная точка: 195</p>
+<p>2x: 185</p>
+<p>4x: 175</p>
+<p>AWM: 165</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Redmi Note 11</h2>
+<p>Общая: 200</p>
+<p>Красная точка: 195</p>
+<p>2x: 185</p>
+<p>4x: 175</p>
+<p>AWM: 165</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Redmi Note 12</h2>
+<p>Общая: 200</p>
+<p>Красная точка: 200</p>
+<p>2x: 190</p>
+<p>4x: 180</p>
+<p>AWM: 170</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Oppo A53</h2>
+<p>Общая: 190</p>
+<p>Красная точка: 185</p>
+<p>2x: 175</p>
+<p>4x: 165</p>
+<p>AWM: 150</p>
+<p>Свободная камера: 195</p>
+</div>
+
+<div class="card">
+<h2>Oppo A54</h2>
+<p>Общая: 195</p>
+<p>Красная точка: 190</p>
+<p>2x: 180</p>
+<p>4x: 170</p>
+<p>AWM: 160</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Oppo A57</h2>
+<p>Общая: 195</p>
+<p>Красная точка: 190</p>
+<p>2x: 180</p>
+<p>4x: 170</p>
+<p>AWM: 160</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Oppo Reno 5</h2>
+<p>Общая: 200</p>
+<p>Красная точка: 195</p>
+<p>2x: 185</p>
+<p>4x: 175</p>
+<p>AWM: 165</p>
+<p>Свободная камера: 200</p>
+</div>
+
+<div class="card">
+<h2>Oppo Reno 6</h2>
+<p>Общая: 200</p>
+<p>Красная точка: 200</p>
+<p>2x: 190</p>
+<p>4x: 180</p>
+<p>AWM: 170</p>
+<p>Свободная камера: 200</p>
+</div>
+<!--Добавь больше статей или разделов здесь-->
+<div class="card">
+<h2>1. Что такое чувствительность в Free Fire</h2>
+<p>Чувствительность отвечает за скорость движения прицела. Чем выше значение, тем быстрее двигается прицел.</p>
+</div>
+
+<div class="card">
+<h2>2. Как делать больше хедшотов</h2>
+<p>Чтобы делать больше хедшотов, нужно немного тянуть прицел вверх во время стрельбы.</p>
+</div>
+
+<div class="card">
+<h2>3. Лучшие настройки для новичков</h2>
+<p>Новичкам лучше использовать среднюю чувствительность.</p>
+</div>
+
+<div class="card">
+<h2>4. Как правильно держать телефон</h2>
+<p>Держите телефон двумя руками для лучшего контроля.</p>
+</div>
+
+<div class="card">
+<h2>5. Лучшее оружие для новичков</h2>
+<p>MP40, AK и M1014 — хорошее оружие для начала.</p>
+</div>
+
+<div class="card">
+<h2>6. Что такое DPI</h2>
+<p>DPI влияет на скорость реакции экрана.</p>
+</div>
+
+<div class="card">
+<h2>7. Как быстро улучшить игру</h2>
+<p>Играйте каждый день и тренируйтесь в тренировочном режиме.</p>
+</div>
+
+<div class="card">
+<h2>8. Лучшие режимы для тренировки</h2>
+<p>Clash Squad и Training Ground отлично подходят для тренировки.</p>
+</div>
+
+<div class="card">
+<h2>9. Как улучшить реакцию</h2>
+<p>Используйте наушники и стабильный интернет.</p>
+</div>
+
+<div class="card">
+<h2>10. Как использовать глоу стены</h2>
+<p>Глоу стены защищают от врагов во время перестрелки.</p>
+</div>
+<!--Добавь больше статей или разделов здесь-->
+<div class="card">
+<h2>11. Почему важен звук</h2>
+<p>Звук помогает услышать шаги врагов.</p>
+</div>
+
+<div class="card">
+<h2>12. Настройки HUD</h2>
+<p>Правильное расположение кнопок помогает быстрее стрелять.</p>
+</div>
+
+<div class="card">
+<h2>13. Как уменьшить лаги</h2>
+<p>Закройте лишние приложения и уменьшите графику.</p>
+</div>
+
+<div class="card">
+<h2>14. Как правильно двигаться</h2>
+<p>Двигайтесь в стороны во время боя.</p>
+</div>
+
+<div class="card">
+<h2>15. Почему важно знать карту</h2>
+<p>Знание карты помогает находить лучшие позиции.</p>
+</div>
+
+<div class="card">
+<h2>16. Как играть в команде</h2>
+<p>Работа в команде повышает шанс победы.</p>
+</div>
+
+<div class="card">
+<h2>17. Использование укрытий</h2>
+<p>Используйте стены и здания для защиты.</p>
+</div>
+
+<div class="card">
+<h2>18. Персонажи для новичков</h2>
+<p>Выбирайте персонажей с простыми навыками.</p>
+</div>
+
+<div class="card">
+<h2>19. Как поднимать ранг</h2>
+<p>Играйте осторожно и доживайте до финала.</p>
+</div>
+
+<div class="card">
+<h2>20. Как правильно лутаться</h2>
+<p>Сначала берите оружие и броню.</p>
+</div>
+<!--Добавь больше статей или разделов здесь-->
